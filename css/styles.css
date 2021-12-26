@@ -25,7 +25,12 @@ p {
 ul {
   margin: 0;
   list-style: none;
+  padding: 0;
 }
+a{
+  text-decoration: none;
+}
+
 .promo-bar {
   background-color: #161f49;
 }
@@ -38,3 +43,32 @@ ul {
   text-align: center;
   letter-spacing: 0.10998px;
 }
+.container{
+  width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-container{
+  display: flex;
+
+}
+
+.nav{
+  display: flex;
+}
+
+.logo{
+padding-left: 36px;
+}
+
+.menu{
+  display: flex;
+  margin-left: 195px;
+}
+
+.header-button{
+  margin-left: auto;
+}
+
