@@ -27,7 +27,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -43,32 +43,65 @@ a{
   text-align: center;
   letter-spacing: 0.10998px;
 }
-.container{
+.container {
   width: 1470px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.header-container{
-  display: flex;
-
-}
-
-.nav{
+.header-container {
   display: flex;
 }
 
-.logo{
-padding-left: 36px;
+.nav {
+  display: flex;
+  align-items: center;
 }
 
-.menu{
+.logo {
+  padding-left: 36px;
+}
+
+.menu {
   display: flex;
   margin-left: 195px;
+  align-items: center;
 }
 
-.header-button{
+.header-button {
   margin-left: auto;
+  padding-right: 64px;
+  padding-left: 64px;
 }
 
+.menu-link {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.10998px;
+  color: var(--second-text-color);
+  padding-top: 30px;
+  padding-bottom: 25px;
+  display: block;
+}
+
+.menu-item + .menu-item {
+  margin-left: 37px;
+}
+
+.main-button {
+  background: #2468ff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.79;
+  text-align: center;
+  letter-spacing: 0.10998px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
