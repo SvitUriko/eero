@@ -105,3 +105,42 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.hero {
+  padding-top: 120px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.11;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 21px;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.hero-button {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid var(--main-text-color);
+  padding: 16px 37px 21px 37px;
+  margin-top: 16px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 87px;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+}
