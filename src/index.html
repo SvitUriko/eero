@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
@@ -22,14 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="promo-bar">
-        <p class="promo-bar-text">
-          Free 2-day shipping | 30-day money back guarantee
-        </p>
+        <p class="promo-bar-text">Free 2-day shipping | 30-day money back guarantee</p>
       </div>
       <div class="container header-container">
         <nav class="nav">
@@ -60,51 +53,25 @@
         <a href="#" class="main-button header-button">Shop</a>
       </div>
     </header>
+    <include src="./partials/hero.html"></include>
     <main>
-      <section class="hero">
-        <div class="container container-hero">
-          <h1 class="hero-title animate__animated animate__bounce wow">
-            Wi-Fi 6 is here.
-          </h1>
-          <p class="hero-text">The future of home wifi is fast.</p>
-          <a href="#" class="hero-button">SHOP WIFI SOLUTIONS</a>
-          <img
-            class="hero-img"
-            src="./images/wi-fi.png"
-            alt="wi-fi"
-            width="576"
-          />
-        </div>
-      </section>
       <section class="promo">
         <div class="container">
           <div class="amazon-shop">
             <p class="amazon-shop__text">Explore eero systems on</p>
-            <img
-              class="amazon-shop__img"
-              src="./images/amazon-logo.svg"
-              alt="amazon"
-              width="108"
-            />
+            <img class="amazon-shop__img" src="./images/amazon-logo.svg" alt="amazon" width="108" />
             <a class="amazon-shop__link" href="#">Shop now</a>
           </div>
           <h2 class="promo__title animate__fadeInUpBig animate__animated wow">
             More wifi for the devices in your<br />connected home.
           </h2>
           <p class="promo__text">
-            eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
-            increase your internet’s efficiency, and reduce network congestion.
-            Say goodbye to dead spots and buffering with a connection that
-            doesn’t slow you down, even as you add more devices.
+            eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds, increase your
+            internet’s efficiency, and reduce network congestion. Say goodbye to dead spots and
+            buffering with a connection that doesn’t slow you down, even as you add more devices.
           </p>
-          <button type="button" class="promo__button main-button">
-            Find your eero system
-          </button>
-          <img
-            class="promo__img"
-            src="./images/promo-img.jpg"
-            alt="wifi at home"
-          />
+          <button type="button" class="promo__button main-button">Find your eero system</button>
+          <img class="promo__img" src="./images/promo-img.jpg" alt="wifi at home" />
         </div>
       </section>
       <section class="products">
@@ -113,45 +80,41 @@
             <li class="products__item">
               <div class="products__label">Wi-Fi 6</div>
               <h2 class="products__title wow">eero Pro 6</h2>
-              <h3
-                class="products__caption animate__slideInUp animate__animated wow"
-              >
+              <h3 class="products__caption animate__slideInUp animate__animated wow">
                 The fastest <br />
                 eero yet.
               </h3>
               <p class="products__text">
-                Tri-band Wi-Fi 6 system designed for homes with gigabit internet
-                connections.
+                Tri-band Wi-Fi 6 system designed for homes with gigabit internet connections.
               </p>
               <p class="products__price">Starting at<span>$229</span></p>
-              <button type="button" class="products__button main-button">
-                Shop now
-              </button>
+              <button type="button" class="products__button main-button">Shop now</button>
             </li>
             <li class="products__item">
               <div class="products__label">Wi-Fi 6</div>
               <h2 class="products__title wow">eero 6</h2>
-              <h3
-                class="products__caption animate__slideInUp animate__animated wow"
-              >
+              <h3 class="products__caption animate__slideInUp animate__animated wow">
                 Experience Wi-Fi 6—the new <br />standard for home wifi.
               </h3>
               <p class="products__text">
-                Dual-band Wi-Fi 6 system designed for homes with 500 Mbps
-                internet connections.
+                Dual-band Wi-Fi 6 system designed for homes with 500 Mbps internet connections.
               </p>
               <p class="products__price">Starting at<span>$129</span></p>
-              <button type="button" class="products__button main-button">
-                Shop now
-              </button>
+              <button type="button" class="products__button main-button">Shop now</button>
             </li>
           </ul>
         </div>
       </section>
+      <include src="./partials/quote.html"></include>
     </main>
-    <script src="js/wow.min.js"></script>
+    <!-- <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
-    </script>
+    </script> -->
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/example.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
   </body>
 </html>
