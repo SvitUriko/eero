@@ -1,54 +1,83 @@
-
 .slider__item {
-    width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    padding: 168px 360px 149px ;
-    text-align: center;
-    color: #fff;
-
+  padding: 168px 360px 149px;
+  text-align: center;
+  color: #fff;
 }
 
 .slider__item--slide-1 {
-    background-image: url(../images/slider-1.jpg);
+  background-image: url(../images/slider-1.jpg);
 }
 .slider__item--slide-2 {
-    background-image: url(../images/slider-2.jpg);
+  background-image: url(../images/slider-2.jpg);
 }
 .slider__item--slide-3 {
-    background-image: url(../images/slider-3.jpg);
+  background-image: url(../images/slider-3.jpg);
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 57px;
-
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
 }
 .icons__item + .icons__item {
-    margin-left: 32px;
-
+  margin-left: 32px;
 }
 .slider__title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 1.2;
-    margin-bottom: 44px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 44px;
 }
 
 .slider__text {
-    margin-bottom: 118px;
+  margin-bottom: 118px;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.4;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4;
 }
 .slider__button {
-    margin: 0 auto;
-    width: 220px;
-    height: 52px;
+  margin: 0 auto;
+  width: 220px;
+  height: 52px;
+}
+
+.slick-dots {
+  margin-bottom: 75px;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.slick-dots li.slick-active button {
+  background-color: black;
+}
+
+.slick-prev,
+.slick-next {
+  color: red;
+  z-index: 100;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
 }
