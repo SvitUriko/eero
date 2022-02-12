@@ -1,0 +1,37 @@
+.numbers__square {
+  width: 18px;
+  height: 18px;
+  background: #999;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.numbers__line {
+  width: 36px;
+  height: 1px;
+  background: #999;
+  margin: 0 7px;
+}
+
+.numbers {
+  display: flex;
+}
+
+.numbers__item {
+  display: flex;
+  align-items: center;
+}
+.system {
+  width: 224px;
+  margin: 0 auto;
+}
+.find-eero__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.numbers__square--active {
+  background: #00b68c;
+  border: 3px solid transparent;
+  outline: 1px solid #00b68c;
+}

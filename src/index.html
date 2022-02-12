@@ -107,6 +107,7 @@
       </section>
       <include src="./partials/quote.html"></include>
       <include src="./partials/slider.html"></include>
+      <include src="./partials/find-eero.html"></include>
     </main>
     <!-- <script src="js/wow.min.js"></script>
     <script>
@@ -126,6 +127,15 @@
     <script>
       $('.slider').slick({
         dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+      });
+    </script>
+    <script>
+      $('.system').slick({
+        dots: false,
         infinite: true,
         speed: 500,
         fade: true,
