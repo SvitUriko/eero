@@ -4,6 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './slick.scss';
+@import './slick-theme.scss';
 @import './example';
 @import './old';
 @import './quote';
+@import './slider';

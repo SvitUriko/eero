@@ -106,6 +106,7 @@
         </div>
       </section>
       <include src="./partials/quote.html"></include>
+      <include src="./partials/slider.html"></include>
     </main>
     <!-- <script src="js/wow.min.js"></script>
     <script>
@@ -116,5 +117,20 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+      });
+    </script>
   </body>
 </html>
